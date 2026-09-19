@@ -2,50 +2,166 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pham Minh Hoang</title>
-    <head>
+    <title>bai_2</title>
 </head>
 <body>
-    <table>
-        <tr> <!-- dòng 1 -->
-              <td></td>
-            <td><p>First Name:</p></td>
-            <td>
-                <input type="text" name="firstName">
+    <!-- Logo -->
+     <div class="text-center"> 
+        <div class="logo">
+            <div class="logo-top">JackSon</div>
+            <hr class="logo-hr">
+            <div class="logo-bottom">Electronic</div>
+        </div>
+            <h2 class="text-center">Registration Form</h2>
+           
+        </div>
+    </div>
+    <!-- bang--> <!-- label-1-2-3  -->
+      <p class="subtitle">Register your Jackson Electronic products here</p>
+     <table>
+        <tr>
+            <td class = "label-1">
+                <label for="First Name">First Name:</label>
             </td>
-            <td>
-                Last Name:
-                <input type="text" name="lastName">
+            <td class = "input-1">
+                <input type="text" id="First Name" name="First Name" required>
+                <label for="Last Name" class="label-2">Last Name:</label>
+                <input type="text" id="Last Name" name="Last Name" required>
+            </td>
+        </tr> 
+        <tr>
+            <td class = "label-1">
+                <label for="Address#1">Address#1:</label>
+            </td>
+            <td class = "input-1">
+                <input type="text" id="Address#1" name="Address#1" required>
+            </td>
+            <tr>
+                <td class = "label-1">
+                    <label for="Address#2">Address#2:</label>
+                </td>
+                <td class = "input-1">
+                    <input type="text" id="Address#2" name="Address#2">
+                </td>
+        </tr>
+        <tr>
+            <td class = "label-1">
+                <label for="City">City:</label>
+            </td>
+            <td class = "input-1">
+                <input type="text" id="City" name="City" required>
+                <label for="State" class="label-2">State:</label>
+                <input type="text" id="State" name="State" required>
+                <label for="Zip" class="label-2">Zip:</label>
+                <input type="text" id="Zip" name="Zip" required>
             </td>
         </tr>
-        <tr> <!-- dòng 2 -->
-              <td></td>
-            <td>Address #1:</td>
-            <td><input type="text" name="address1"></td>
-        </tr>
-        <tr> <!-- dòng 3 -->
-              <td></td>
-            <td>Address #2:</td>
-            <td><input type="text" name="address2"></td>
-        </tr>
-        <tr> <!-- dòng 4 -->
-              <td></td>
-            <td>City:</td>
-            <td><input type="text" name="city"></td>
-            <td>
-                State:
-                <input type="text" size="2" name="state">
-                Zip:
-                <input type="text" size="6" name="zip">
+        <tr>
+            <td class = "label-1">
+                <label for="Country">Country:</label>
             </td>
-
+            <td class = "input-1">
+                <input type="text" id="Country" name="Country" value="United States" required>
         </tr>
-        <tr> 
-            <td>Country:</td>
-            <td><input type="text" name="country"></td>
         </tr>
+        <td colspan="2">
+            <hr class="line">
+        </td>
+        <tr class="label-1">
+            <td class="label-1">
+                <label for="Product">Product:</label>
+            </td>
+            <td class="input-1">
+                <select id="Product" name="Product" required>
+                    <option value="ScanMaster">ScanMaster</option>
+                    <option value="7 Byte Brew">7 Byte Brew</option>
+                    <option value="Pham Minh Hoang">Pham Minh Hoang</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="label-1">
+                <label for="DatePurchased">Date Purchased:</label>
+            </td>
+            <td class="input-1">
+                <input type="text" id="DatePurchased" name="DatePurchased" required>
+            </td>
+        </tr>
+        <tr>
+            <td class="label-1">
+                <label for="Serial#">Serial#:</label>
+            </td>
+            <td class="input-1">
+                <input type="text" id="SerialNumber" name="SerialNumber" required>
+            </td>
+        </tr>
+        <tr>
+            <td class="label-1 label3">Used For:</td>
+            <td>
+                    <span class="item item-left">
+                        <input type="radio" id="home" name="usedFor" value="Home" class="cuscheck">
+                        <label for="home" class="radio-label">Home</label>
+                    </span>
+                    <span class="item">
+                        <input type="radio" id="edu" name="usedFor" value="EducationalInstitution"
+                            class="cuscheck">
+                        <label for="edu" class="radio-label">Educational Institution</label>
+                    </span><br>
+                    <span class="item item-left">
+                        <input type="radio" id="biz" name="usedFor" value="Business" class="cuscheck" checked>
+                        <label for="biz" class="radio-label">Business</label>
+                    </span>
+                    <span class="item">
+                        <input type="radio" id="other" name="usedFor" value="Other" class="cuscheck">
+                        <label for="other" class="radio-label">Other</label>
+                    </span><br>
+                    <span class="item item-left">
+                        <input type="radio" id="gov" name="usedFor" value="Government" class="cuscheck">
+                        <label for="gov" class="radio-label">Government</label>
+                    </span>
+                </td>
+        </tr>
+        <tr>
+            <td class="label-1 label-3">System (check all that apply):</td>
+        </tr>
+        <tr>
+            <td class="label-1"></td>
+            <td>
+                <span class="item item-left">
+                    <input type="checkbox" id="Windows" name="system" value="Windows" class="cuscheck">
+                    <label for="Windows" class="checkbox-label">Windows</label>
+                </span>
+                <span class="item">
+                    <input type="checkbox" id="Macintosh" name="system" value="Macintosh" class="cuscheck">
+                    <label for="Macintosh" class="checkbox-label">Macintosh</label>
+                </span><br>
+                <span class="item item-left">
+                    <input type="checkbox" id="Linux" name="system" value="Linux" class="cuscheck">
+                    <label for="Linux" class="checkbox-label">Linux</label>
+                </span>
+                <span class="item">
+                    <input type="checkbox" id="OtherSystem" name="system" value="OtherSystem"
+                        class="cuscheck">
+                    <label for="OtherSystem" class="checkbox-label">Other</label>
+                </span>
+            </td>
+        </tr>
+        <td colspan="2">
+            <hr class="line">
+        </td>
+        <tr>
+            <td class="label-1">
+                <label for="Comments">Comments:</label>
+            </td>
+            <td class="input-1">
+                <textarea id="Comments" name="Comments" rows="4" cols="50"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="text-center">
+                <input type="button" value="Click to register">
+                <input type="button" value="Click to cancel">
+            </td>
     </table>
-    <hr size="5" width="70%" > 
 </body>
 </html>
