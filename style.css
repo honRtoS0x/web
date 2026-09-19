@@ -197,8 +197,8 @@ select {
 }
 
 .btn-row {
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 0;
+  padding-bottom: 0;
   text-align: center;
 }
 
