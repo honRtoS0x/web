@@ -3,45 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>bai_2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Logo, label --> 
-     <div class="text-center"> 
+     <form action="#">
+     <div class="text-center">
         <div class="logo">
             <div class="logo-top">JackSon</div>
             <hr class="logo-hr">
             <div class="logo-bottom">Electronic</div>
         </div>
             <h2 class="text-center">Registration Form</h2>
-           
-        </div>
-    </div>
+            </div>
     <!-- bang--> <!-- label-1-2-3  -->
-      <p class="subtitle">Register your Jackson Electronic products here</p>
+      <p class="sub-heading">Register your Jackson Electronic products here</p>
      <table>
         <tr>
             <td class = "label-1">
-                <label for="First Name">First Name:</label>
+                <label for="FirstName">First Name:</label>
             </td>
             <td class = "input-1">
-                <input type="text" id="First Name" name="First Name" required>
-                <label for="Last Name" class="label-2">Last Name:</label>
-                <input type="text" id="Last Name" name="Last Name" required>
+                <input type="text" id="FirstName" name="FirstName" required>
+                <label for="LastName" class="label-2">Last Name:</label>
+                <input type="text" id="LastName" name="LastName" required>
             </td>
         </tr> 
         <tr>
             <td class = "label-1">
-                <label for="Address#1">Address#1:</label>
+                <label for="Address1">Address#1:</label>
             </td>
             <td class = "input-1">
-                <input type="text" id="Address#1" name="Address#1" required>
+                <input type="text" id="Address1" name="Address1" required>
             </td>
-            <tr>
-                <td class = "label-1">
-                    <label for="Address#2">Address#2:</label>
-                </td>
+        </tr>
+        <tr>
+            <td class = "label-1">
+                <label for="Address2">Address2:</label>
+            </td>
                 <td class = "input-1">
-                    <input type="text" id="Address#2" name="Address#2">
+                    <input type="text" id="Address2" name="Address2">
                 </td>
         </tr>
         <tr>
@@ -57,16 +58,17 @@
             </td>
         </tr>
         <tr>
-            <td class = "label-1">
-                <label for="Country">Country:</label>
+            <td class = "label-1"><label for="Country">Country:</label>
             </td>
             <td class = "input-1">
                 <input type="text" id="Country" name="Country" value="United States" required>
+            </td>
         </tr>
-        </tr>
+        <tr>
         <td colspan="2">
             <hr class="line">
         </td>
+        </tr>
         <tr class="label-1">
             <td class="label-1">
                 <label for="Product">Product:</label>
@@ -89,14 +91,14 @@
         </tr>
         <tr>
             <td class="label-1">
-                <label for="Serial#">Serial#:</label>
+                <label for="Serial">Serial#:</label>
             </td>
             <td class="input-1">
-                <input type="text" id="SerialNumber" name="SerialNumber" required>
+                <input type="text" id="Serial "name="Serial" required>
             </td>
         </tr>
         <tr>
-            <td class="label-1 label3">Used For:</td>
+            <td class="label-1 label-3">Used For:</td>
             <td>
                     <span class="item item-left">
                         <input type="radio" id="home" name="usedFor" value="Home" class="cuscheck">
@@ -123,9 +125,7 @@
         </tr>
         <tr>
             <td class="label-1 label-3">System (check all that apply):</td>
-        </tr>
-        <tr>
-            <td class="label-1"></td>
+           
             <td>
                 <span class="item item-left">
                     <input type="checkbox" id="Windows" name="system" value="Windows" class="cuscheck">
@@ -146,9 +146,11 @@
                 </span>
             </td>
         </tr>
+        <tr>
         <td colspan="2">
             <hr class="line">
         </td>
+        </tr>
         <tr>
             <td class="label-1">
                 <label for="Comments">Comments:</label>
@@ -158,10 +160,12 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2" class="text-center">
+            <td colspan="2" class="btn-row">
                 <input type="button" value="Click to register">
                 <input type="button" value="Click to cancel">
             </td>
+        </tr>
     </table>
+</form>
 </body>
 </html>
