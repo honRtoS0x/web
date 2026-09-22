@@ -1,166 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7 Byte Brew</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class = "header">
+    <header class="header" id="top">
         <h1>EXAMPLE CAFE MENU</h1>
-        <nav class = "bar" aria-label="main navigation">
-            <a class = "h-link" href="#top" arira label="Home">
-                <img src="icons8-home-50.png" alt="Home Icon" class = "icon">
+        <nav class="bar" aria-label="main navigation">
+            <a class="h-link" href="#top" aria-label="Home">
+                <img src="image/icons8-home-50.png" alt="Home Icon" class="icon">
             </a>
-            <a href="#starers">STARTER</a>
+            <a href="#starter">STARTER</a>
             <a href="#main">MAIN</a>
-            <a href="#dessert">DESSERT</a>
-        <form class ="search" action="#" method="get">
-            <input type="search" name="q" aria-label="Search">
-            <button type="go">Go</button>
-        </form>
+            <a href="#desserts">DESSERT</a>
+            <form class="search" action="#" method="get">
+                <input type="search" name="q" aria-label="Search">
+                <button type="submit">Go</button>
+            </form>
         </nav>
-        <div class="layout">
-            <aside class="sbar">
-                <nav class="smenu" aria-label="drinks">
-                    <a href="#information">Cafe Latte</a>
-                    <a href="#information">Capuchino</a>
-                    <a href="#information">Ocean Blue</a>
-                    <a href="#information">Ice-cream Cafe</a>
-                    <a href="#inforamtion">Oder Online</a>
-                <img
-                class="company-image"
-                src="company.png"
-                alt="people"
-                >
-                </aside>
-                <aside>
-                <main class="Main">
-                    <section id="starter">
-                        <h2 class="section-title">Starter</h2>
-                        <ul class="dish-list">
-                            <li>
-                                Chesnut and Musroom Goujons
-                                <span class="vegetarian">(v)</v></span>
-                            </li>
-                            <li>
-                                Goat Cheese
-                                <span class="vegetarian">(v)</span>
-                            </li>
-                            <li>
-                                <strong class="honey">HONEY SOY CHICKEN KEBABS</strong>
-                                <span class="vegetarian">(V)</span>
-                            </li>
-                            <li>
-                                Seadfood Salad
-                                <span class="vegetarian">(v)</span>
-                            </li>
-                        </ul>
-                        <a class="back-link" href="#Top">Back to top</a>
-                            </section>
-                        <section id="Desserts">
-                            <h2 class="section-title">Dessert</h2>
-                            <ul class="dish-list">
-                                <li>
-                                    Lemon Sorbet
-                                    <span class="vegetarian">(v)</span>
-                                </li>
-                                <li>
-                                    Chocolate Mad Pie
-                                    <span class="vegetarian">(v)</span>
-                                </li>
-                                <li>
-                                    Pecan Pie
-                                    <span class="vegetarian">(v)</span>
-                                </li>
-                                <li>
-                                    Selection of fine Cheese from Arround the World
-                                    <span class="vegetarian">(v)</span>
-                                </li>
-                            </ul>
-                            <a class="back-link" href="#Top">Back to top</a>
-                        </section>
-                        <section id="Information">
-                            <h2 class="section-title">INFORMATION</h2>
-                            <form class="in4form">
-                                <input
-                                type="text"
-                                name="firstname"
-                                placeholder="First Name"
-                                aria-label="First Name"
-                                >
-                                <input
-                                type="text"
-                                name="lastname"
-                                placeholder="Last Name"
-                                aria-label="Last Name"
-                                >
-                                <input
-                                type="text"
-                                name="email"
-                                placeholder="Email"
-                                aria-label="Email"
-                                >
-                                <input
-                                type="text"
-                                name="telephone"
-                                placeholder="Telephone"
-                                aria-label="Telephone"
-                                >
-                                <select name="country" aria-label="country">
-                                    <option value="usa">USA</option>
-                                    <option value="VietNam">Viet Nam</option>
-                                    <option value="deptrai">Pham Minh Hoang</option>
-                                </select>
-                            </form>
-                        </section>
-                        <div class="radio"
-                                role="radio"
-                                aria-label="radio">
-                                <label>
-                                    <input
-                                    type="radio"
-                                    value="vietnamese"
-                                    >
-                                    Vietnamese
-                                </label>
-                                <label>
-                                    <input
-                                    type="radio"
-                                    value="Foreigner"
-                                    > Foreigner
-                                </label>
-                        </div>
-                        <textarea
-                        name="Comment"
-                        placeholder="Comment"
-                        aria-label="comment"
-                        >
-                        </textarea>
-                        <div class="button">
-                            <button type="submit">Submit</button>
-                            <button type="cancel">Cancel</button>
-                        </div>
-                </main>
-                </aside>
-                <aside class="right-side">
-                    <h2>Events</h2>
-                    <div>  
-                    <h3>Regular Meetings</h3>
-                    <img src="meeting.png" alt="Regular meeting">
-                    </div>
-                    <p> Host your regular team meetings or activities in the comfort of your own private room.</p>
-                    <a href="Read more...">Read more...</a>
-                    <div>
-                        <h3>Product Launches</h3>
-                        <img src="launch.png" alt="launch">
-                    </div>
-                    <p>Launch your product with case in a space that try fits its image.</p>
-                    <a href="Read more...">Read more...</a>
-                </aside>
-            </nav>
-        </div>
     </header>
+    <div class="layout">
+        <aside class="sbar">
+            <nav class="smenu" aria-label="drinks">
+                <a href="#information">Cafe Latte</a>
+                <a href="#information">Capuchino</a>
+                <a href="#information">Ocean Blue</a>
+                <a href="#information">Ice-cream Cafe</a>
+                <a href="#information">Oder online</a>
+            </nav>
+            <img class="company-image" src="image/company.png" alt="people">
+        </aside>
+
+        <main class="Main">
+            <section id="starter">
+                <h2 class="section-title">Starter</h2>
+                <ul class="dish-list">
+                    <li>
+                        Chesnut and Musroom Goujons
+                        <span class="vegetarian">(v)</span>
+                    </li>
+                    <li>
+                        Goat Cheese
+                        <span class="vegetarian">(v)</span>
+                    </li>
+                    <li id="main">
+                        <strong class="honey">HONEY SOY CHICKEN KEBABS</strong>
+                        <span class="vegetarian">(V)</span>
+                    </li>
+                    <li>
+                        Seadfood Salad
+                        <span class="vegetarian">(v)</span>
+                    </li>
+                </ul>
+                <a class="back-link" href="#top">Back to top</a>
+            </section>
+            <section id="desserts">
+                <h2 class="section-title">Dessert</h2>
+                <ul class="dish-list">
+                    <li>
+                        Lemon Sorbet
+                        <span class="vegetarian">(v)</span>
+                    </li>
+                    <li>
+                        Chocolate Mad Pie
+                        <span class="vegetarian">(v)</span>
+                    </li>
+                    <li>
+                        Pecan Pie
+                        <span class="vegetarian">(v)</span>
+                    </li>
+                    <li>
+                        Selection of fine Cheese from Arround the World
+                        <span class="vegetarian">(v)</span>
+                    </li>
+                </ul>
+                <a class="back-link" href="#top">Back to top</a>
+            </section>
+            <section id="information">
+                <h2 class="section-title">INFORMATION</h2>
+
+                <form class="in4form">
+                    <input type="text" name="firstname" placeholder="First Name" aria-label="First Name">
+
+                    <input type="text" name="lastname" placeholder="Last Name" aria-label="Last Name">
+
+                    <input type="email" name="email" placeholder="Email" aria-label="Email">
+
+                    <input type="tel" name="telephone" placeholder="Telephone" aria-label="Telephone">
+
+                    <select name="country" aria-label="Country">
+                        <option value="usa">USA</option>
+                        <option value="vietnam">Viet Nam</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <div class="radio" role="group" aria-label="Nationality">
+                        <label>
+                            <input type="radio" name="nationality" value="vietnamese">
+                            Vietnamese
+                        </label>
+
+                        <label>
+                            <input type="radio" name="nationality" value="foreigner">
+                            Foreigner
+                        </label>
+                    </div>
+
+                    <textarea name="comment" placeholder="Comment" aria-label="Comment"></textarea>
+
+                    <div class="button">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Cancel</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <aside class="right-side">
+            <h2>Events</h2>
+            <article class="event">
+                <h3>Regular Meetings</h3>
+                <img src="/image/meeting.png" alt="Regular meeting">
+
+                <p> Host your regular team meetings or activities in the comfort of your own private room.</p>
+                <a href="#information">Read more...</a>
+            </article>
+            <article class="event">
+                <h3>Product Launches</h3>
+                <img src="/image/launch.png" alt="launch">
+
+                <p>Launch your product with case in a space that try fits its image.</p>
+                <a href="#information">Read more...</a>
+            </article>
+        </aside>
+    </div>
+    <footer class="footer">
+        <p>ABC Company © - 12345678 - abccoffee@gmail.com</p>
+    </footer>
 </body>
+
 </html>
