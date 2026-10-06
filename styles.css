@@ -1,130 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Lora:wght@400;700&display=swap');
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+body{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    max-width: 1366px;
-    margin: 0 auto;
-    font-family: "Be Vietnam Pro", sans-serif;
+    font-family:'Be Viet Nam Pro','Lora';
+    font-weight: 700;
     font-size: 20px;
-    color: black;
-    background-color: white;
-    font-weight: bold;
+    color:#333333;
+    background-color: #FFFFFF;
 }
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e2e2e2;
-    border-radius: 8px;
-}
-
-.header-row {
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 100px;
+    padding: 20px 0px;
     gap: 30px;
-    font-size: 16px;
 }
-
-.logo {
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 200px;
     height: 60px;
+    border-radius: 8px;
 }
-
-.menu {
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 820px;
     height: 34px;
+    border-radius: 8px;
 }
-
-.header-button {
-    width: 120px;
-    height: 48px;
-    border: none;
-    font-family: "Be Vietnam Pro", sans-serif;
-    font-size: 16px;
-    color: black;
-}
-
-.hero {
-    padding: 80px 0;
-    background-color: #f0f0f0;
-}
-
-.hero-row {
+.button{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    justify-content: center;
+    width: 120px;
+    height: 42px;
+    border-radius: 8px;
 }
-
-.content {
-    width: 585px;
-    height: 267px;
-}
-
-.image {
-    width: 585px;
-    height: 520px;
-}
-
-.section {
-    padding: 80px 0;
-}
-
-.title {
-    max-width: 600px;
-    height: 80px;
-    margin: 0 auto 40px;
-    font-family: "Lora", serif;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.item-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.item {
-    width: 380px;
-    height: 420px;
-    flex-shrink: 0;
-}
-
-.section-five {
-    background-color: #f0f0f0;
-}
-
-.item5 {
-    width: 216px;
-    height: 300px;
-    flex-shrink: 0;
-}
-
-.item4 {
-    width: 277.5px;
-    height: 300px;
-    flex-shrink: 0;
-}
-
-footer {
+.bbox1{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 1366px;
+    height: 680px;
+    padding: 0px;
+    gap: 30px;
+    background-color: #F1F1F1;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 585px;
+    height: 267px;
+    border-radius: 8px;
+    background-color: #E2E2E2;
+    margin: 0px 20px 0px 0px;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 585px;
+    height: 520px;
+    border-radius: 8px;
+    background-color: #E2E2E2;
+    margin: 0px 0px 0px 15px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    height: 80px;
+    border-radius: 8px;
+    background-color: #E2E2E2;
+    font-family: 'lora';
+}
+.item-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    gap: 30px;
+    margin-top: 40px;
+}
+.minibox-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 420px;
+    border-radius: 8px;
+    background-color: #E2E2E2;
+}
+.item-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.minibox-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 216px;
+    height: 300px;
+    border-radius: 8px;
+    background-color: #E2E2E2;
+}
+.item-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.minibox-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 277.5px;
+    height: 300px;
+    border-radius: 8px;
+    background-color: #E2E2E2;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1366px;
     height: 72px;
-    background-color: #d9d9d9;
-    font-size: 16px;
+    background-color: #D9D9D9;
 }
